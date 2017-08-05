@@ -1,0 +1,77 @@
+/*  wpólne właściwości dla każdej rozdzielczości  */
+
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+body{margin:0;}
+
+header {
+        background-repeat: no-repeat ;
+        background-size: cover;
+        position:relative ;
+}
+
+#naglowek{position:absolute;}
+
+#naglowek h1,h2{
+        text-transform: uppercase ;
+        color: white;
+        
+    }
+
+#naglowek h1{font-size: 200% ;}
+#naglowek h2{font-size: 130% ;}
+/*------------------------------------------------*/
+/* właściwości dla rozdzielczości powyżej 1170px */
+
+@media (min-device-width:1170px){
+    
+    header {
+        background-image: url(../img/man-1.jpg);
+        height: 100vh ;
+    }
+
+    #naglowek{
+        width:100% ;
+        top:45%;
+        padding-left: 5%;
+    } 
+}
+/*------------------------------------------------*/
+/* właściwości dla rozdzielczości z przedziału 992-1169px */
+
+@media (min-device-width:992px) and (max-device-width:1169px){
+    
+    header{
+        background-image: url(../img/man-2.jpg);
+        height: 70vh ;
+    }
+     
+    #naglowek{
+        right:5%;
+        top:5%;
+    }
+}
+/*------------------------------------------------*/
+/* właściwości dla rozdzielczości poniżej 991px */
+
+@media  (max-device-width:991px){
+
+    header{
+        background-image: url(../img/man-1.jpg);
+        height: 50vh ;
+        text-align: center;
+    }
+     
+    #naglowek{  
+        width:100% ;
+        top:100%;
+    }
+    
+    #naglowek h1,h2{
+        color: black;
+    }
+}
+/*------------------------------------------------*/
